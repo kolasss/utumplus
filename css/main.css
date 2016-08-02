@@ -19,20 +19,24 @@ h1 {
   text-transform: uppercase;
 }
 
-h2{
+h2 {
   font-size: 32px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-h3{
+h3 {
   font-size: 20px;
   font-weight: normal;
 }
 
-h4{
+h4 {
   font-size: 26px;
   text-transform: uppercase;
+}
+
+h5 {
+  font-size: 24px;
 }
 
 .text-block {
@@ -43,6 +47,10 @@ h4{
 
 .blue_bg {
   background: #2d3889;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 /* Buttons */
@@ -93,7 +101,6 @@ h4{
 /* ==================== */
 
 .section_1 {
-  background-image: url(../images/bg.png);
   background-position: center center;
   background-size: cover;
   /*min-height: 720px;*/
@@ -101,7 +108,15 @@ h4{
   color: white;
 }
 
-.section_1:after {
+.section_1.home {
+  background-image: url(../images/bg.png);
+}
+
+.section_1.about {
+  background-image: url(../images/about_1.png);
+}
+
+.section_1.home:after {
   content: " ";
   z-index: 10;
   display: block;
@@ -155,7 +170,7 @@ h4{
   display: block;
   font-size: 16px;
   text-transform: uppercase;
-  color: #cbcbcb;
+  color: #f6f9fa;
   text-decoration: none;
 }
 
@@ -193,6 +208,10 @@ h4{
   margin-bottom: 60px;
 }
 
+.section_1 .about_utum {
+  margin-top: 240px;
+  margin-bottom: 60px;
+}
 
 /* Section 2 */
 /* ==================== */
@@ -214,6 +233,19 @@ h4{
   margin-top: 35px;
 }
 
+.section_2.about .text-block {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.section_2.about .text-block h5 {
+  margin-top: 60px;
+  color: #222222;
+}
+
+.section_2.about .text-block p {
+  margin-top: 30px;
+}
 
 /* Section 3 */
 /* ==================== */
@@ -344,7 +376,7 @@ h4{
 /* ==================== */
 
 .section_4 {
-  min-height: 540px;
+  /*min-height: 540px;*/
 }
 
 .section_4 .fa {
@@ -363,6 +395,12 @@ h4{
 
 .section_4 .text-block .btn-dark {
   margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.section_4.about .text-block {
+  margin-top: 60px;
+  margin-bottom: 180px;
 }
 
 
@@ -477,6 +515,7 @@ h4{
   padding: 60px;
   border-radius: 5px;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+  position: relative;
 }
 
 .section_7 form p {
@@ -507,6 +546,37 @@ h4{
   padding: 10px 40px;
 }
 
+.section_7 form .post_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.section_7 form .post_bg_wrapper {
+  width: 200%;
+}
+
+.parallelogram {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 22px;
+  height: 10px;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #2d3889;
+  -webkit-transform:    skewX(-29deg);
+  transform:    skewX(-29deg);
+
+  float: left;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
 
 /* Section 8 */
 /* ==================== */
@@ -526,7 +596,7 @@ h4{
 }
 
 
-/* Section 9 */
+/* Section 9 - Footer */
 /* ==================== */
 
 .section_9 {
@@ -572,4 +642,130 @@ h4{
   margin-top: 70px;
   margin-bottom: 70px;
   color: #888;
+}
+
+
+/* Section 10 */
+/* ==================== */
+
+.section_10 {
+  /*background-color: white;*/
+}
+
+.section_10 .block {
+  overflow: hidden;
+  position: relative;
+  min-height: 720px;
+}
+
+.section_10 .photo {
+  width: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.section_10 .block_1 .photo {
+  left: 0;
+}
+.section_10 .block_2 .photo {
+  right: 0;
+}
+
+.section_10 .photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section_10 .blue_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+.section_10 .blue_bg .text-align-left {
+  margin-top: 120px;
+  margin-left: 90px;
+  max-width: 420px;
+}
+
+.section_10 .block_1 .blue_bg {
+  right: 0;
+}
+.section_10 .block_2 .blue_bg {
+  left: 0;
+}
+.section_10 .block_2 .blue_bg .text-align-left {
+  margin-left: 120px;
+}
+
+
+/* Section 11 */
+/* ==================== */
+
+.section_11 {
+  /*min-height: 420px;*/
+  background-color: white;
+}
+
+.section_11 .text-block {
+  margin-top: 180px;
+  margin-bottom: 90px;
+}
+
+.section_11 .text-block h2 {
+  color: #222222;
+}
+
+.section_11 .text-block p {
+  margin-top: 35px;
+}
+
+
+/* Section 12 */
+/* ==================== */
+
+.section_12 {
+  overflow: hidden;
+}
+
+.section_12 .slider {
+  width: 200%
+}
+
+.section_12 .slider .photo {
+  float: left;
+  height: 270px;
+  width: 420px;
+  overflow: hidden;
+}
+
+.section_12 .slider .photo img {
+  /*max-width: 100%;*/
+  max-height: 100%;
+}
+
+
+/* Section 13 */
+/* ==================== */
+
+.section_13 {
+  color: white;
+}
+
+.section_13 h1 {
+  font-size: 60px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.section_13 h1 span {
+  font-weight: normal;
+}
+
+.section_13 h5 {
+  font-weight: normal;
+  margin-bottom: 90px;
 }
